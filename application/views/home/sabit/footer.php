@@ -11,8 +11,6 @@
 <!-- Google Map -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFoo9_W8RUWKRBp0QhYNPV1XLiv1jYi4k&sensor=false"></script>
 
-<script src="<?php echo base_url()?>assets/js/GoogleMap.js"></script>
-
 
 <!-- Custom Script -->
 <script src="<?php echo base_url()?>assets/js/custom.min.js"></script>

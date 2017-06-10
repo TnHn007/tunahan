@@ -7,18 +7,16 @@
 
             <!-- Info -->
             <div class="contact-box">
-                <h4 class="title-bar title-bar-black"><strong>Contact</strong> me</h4>
+                <h4 class="title-bar title-bar-black"><strong>Bana</strong> Ulaşmak için</h4>
                 <div class="box-content">
                     <ul class="list-icons ">
                         <li>
                             <i class="fa fa-map-marker fa-fw text-primary"></i>
-                            <span class="content">1111-A Nowhere Lane,<br>
-										Outta Sight,<br>
-										State 90378, USA</span>
+                            <span class="content">Manavgat<br>ANALYA</span>
                         </li>
                         <li>
                             <i class="fa fa-envelope-o fa-fw text-primary"></i>
-                            <span class="content"><a href="#">johnathandoe@suelo.pl</a></span>
+                            <span class="content"><a href="#">tunahanaka@gmail.com</a></span>
                         </li>
                         <li>
                             <i class="fa fa-phone fa-fw text-primary"></i>
@@ -64,25 +62,7 @@
         </div>
 
         <!-- Map -->
-        <div class="contact-map light">
-            <div id="google-map" data-style="light"></div>
-            <div class="map-overlay">
-                <div class="overlay overlay-black" data-alpha="50"></div>
-                <div class="overlay-content vertical-center ">
-                    <div class="owl-carousel" data-single-item="true" data-auto-play="4000">
-                        <div>
-                            <span class="big-text">Working with Mary it was the best time in my life!</span>
-                            <span class="caption text-primary">Jessica Perry, 24 years old</span>
-                        </div>
-                        <div>
-                            <span class="big-text">She completely changed my personal &amp; business life!</span>
-                            <span class="caption text-primary">Mark Webber, 32 years old</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn btn-xs btn-black" data-target="toggle-map">Google map</a>
-        </div>
+
 
     </div>
 </section>
