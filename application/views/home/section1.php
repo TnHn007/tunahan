@@ -8,11 +8,11 @@
 
                     <!-- About -->
                     <div class="resume-box">
-                        <h4 class="title-bar title-bar-black title-bar-hover"><strong>About</strong> Me</h4>
+                        <h4 class="title-bar title-bar-black title-bar-hover"><strong>Bneim</strong>Hakkımda </h4>
                         <div class="box-content">
-                            <p class="lead">I’m <strong>Mary Jane Doe</strong> - 28 years old professional mentalist in Poland.</p>
-                            <p>Through <strong>7 years of my expierience</strong> I have been working for over <strong>200+ happy clients</strong> from all over the world. I’m always looking for new, interesting colaborations and I’m sure that I’m the man you need to hire!</p>
-                            <a href="#" class="btn btn-primary" data-target="slide" data-slide="4">Contact Me</a>
+                            <p class="lead">Adım <strong>Tunahan AKA</strong>  31 yaşındayım Manavgat lıyım </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis ea incidunt labore pariatur quas, quod voluptate. Amet dolor esse, eveniet facere fugit illo, itaque officiis quam unde ut voluptatibus.</p>
+                            <a href="#" class="btn btn-primary" data-target="slide" data-slide="4">İletişim</a>
                         </div>
                     </div>
 
