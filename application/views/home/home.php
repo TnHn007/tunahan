@@ -3,11 +3,18 @@
     <div class="home-wrapper">
 
         <!-- Home Content -->
-        <div class="home-content home-photo main-photo dark">
+        <div class="home-content home-photo main-photo bgimg dark">
             <div class="overlay overlay-black" data-alpha="60"></div>
             <div class="text-center vertical-center">
-                <span class="home-title">Tunahan <strong>Aka</strong></span>
-                <span class="home-caption"><strong>Bilgisayar Mühendisi</strong></span>
+                <?php if($profil==null)
+                {
+                    echo "<h4 class='alert-succes'>Hata</h4>";
+                } else {
+                foreach ($profil as $row){  ?>
+
+                <span class="home-title"> <strong><?php echo $row->profil_adi; ?></strong></span>
+                <span class="home-caption"><?php echo $row->profil_unvan; ?></span>
+                <?php          }   }    ?>
             </div>
         </div>
 
@@ -21,13 +28,19 @@
             <!-- Content -->
             <div class="text-right vertical-center">
                 <div class="nav-text">
-                    <div class="my-avatar"><img src="<?php  echo base_url();?>assets/images/resim/my-avatar.jpg" class="img-circle" alt="" /></div>
-                    <h2 class="margin-bottom-0">Tunahan <strong>Aka</strong></h2>
+                    <?php if($profil==null)
+                    {
+                        echo "<h4 class='alert-succes'>Hata</h4>";
+                    } else {
+                    foreach ($profil as $row){  ?>
+                    <div class="my-avatar"><img src="<?php  echo base_url();?>assets/images/resim/<?php echo $row->avatar; ?>" class="img-circle" alt="" /></div>
+                    <h2 class="margin-bottom-0"><strong><?php echo $row->profil_adi; ?></strong></h2>
+                    <?php          }   }    ?>
                     <h6 class="nav-caption">Deneyim<span class="text-primary">denenme</span> Manavgat</h6>
                 </div>
                 <div class="content-buttons">
                     <a href="#" class="btn btn-primary" data-placement="1">CV İndir</a>
-                    <a href="blog.html" class="btn btn-primary" data-placement="3">Check my Blog</a>
+                    <a href="blog.html" class="btn btn-primary" data-placement="3">Blog</a>
                 </div>
             </div>
             <!-- Navigation buttons -->

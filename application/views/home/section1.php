@@ -1,5 +1,6 @@
 <!-- Resume -->
-<section id="resume" class="swiper-slide" data-caption="<span>Yeteneklerim</span> &amp; <span>Uzmanlıklarım</span>" data-title="Yeteneklerim">
+<section id="resume" class="swiper-slide" data-caption="<span>Yeteneklerim</span> &amp; <span>Uzmanlıklarım</span>"
+         data-title="Yeteneklerim">
     <div class="section-wrapper">
         <div class="resume-grid padded">
             <div class="row">
@@ -8,43 +9,51 @@
 
                     <!-- About -->
                     <div class="resume-box">
-                        <h4 class="title-bar title-bar-black title-bar-hover"><strong>Bneim</strong>Hakkımda </h4>
+                        <h4 class="title-bar title-bar-black title-bar-hover"><strong>Benim</strong> Hakkımda </h4>
                         <div class="box-content">
-                            <p class="lead">Adım <strong>Tunahan AKA</strong>  31 yaşındayım Manavgat lıyım </p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis ea incidunt labore pariatur quas, quod voluptate. Amet dolor esse, eveniet facere fugit illo, itaque officiis quam unde ut voluptatibus.</p>
+                            <?php if ($hakkimda == null) {
+                                echo "<h4 class='alert-succes'>Hata</h4>";
+                            } else {
+                                foreach ($hakkimda as $row) { ?>
+
+                                    <p class="lead"><strong><?php echo $row->kisaca; ?></strong></p>
+                                    <p><?php echo $row->hakkimda; ?></p>
+                                <?php }
+                            } ?>
                             <a href="#" class="btn btn-primary" data-target="slide" data-slide="4">İletişim</a>
                         </div>
                     </div>
 
                     <!-- Services -->
                     <div class="resume-box">
-                        <h4 class="title-bar title-bar-black title-bar-hover">My <strong>Services</strong></h4>
+                        <h4 class="title-bar title-bar-black title-bar-hover">Servis <strong> & Hizmetlerim</strong>
+                        </h4>
                         <div class="box-content">
                             <div class="single-service">
                                 <div class="service-icon icon icon-black icon-circle icon-filled">
-                                    <i class="flaticon-profiles-avatar"></i>
+                                    <i class="fa fa-database"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4 class="service-title"><strong>Motivation</strong> Curses</h4>
-                                    <span class="service-caption text-muted "><i>Short, but really great &amp; awesome service caption</i></span>
+                                    <h4 class="service-title"><strong>Server</strong> Yönetim</h4>
+                                    <span class="service-caption text-muted "><i>Linux Server  & Windows Server Bakım , Kurulum</i></span>
                                 </div>
                             </div>
                             <div class="single-service">
                                 <div class="service-icon icon icon-black icon-circle icon-filled">
-                                    <i class="flaticon-think4"></i>
+                                    <i class="flaticon-newspaper18"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4 class="service-title"><strong>Psychoanalysis</strong></h4>
-                                    <span class="service-caption text-muted "><i>Short, but really great &amp; awesome service caption</i></span>
+                                    <h4 class="service-title"><strong>Web Tasarım</strong></h4>
+                                    <span class="service-caption text-muted "><i>Dinamik ve Yönetilebilir Web Siteleri Yapılır.</i></span>
                                 </div>
                             </div>
                             <div class="single-service">
                                 <div class="service-icon icon icon-black icon-circle icon-filled">
-                                    <i class="flaticon-tie7"></i>
+                                    <i class="flaticon-paper-plane"></i>
                                 </div>
                                 <div class="service-content">
-                                    <h4 class="service-title"><strong>Business</strong> Mental Coaching</h4>
-                                    <span class="service-caption text-muted "><i>Short, but really great &amp; awesome service caption</i></span>
+                                    <h4 class="service-title"><strong>Arama Motoru</strong> Optimizasyonu</h4>
+                                    <span class="service-caption text-muted "><i>Google da ilk sayfalarada çıkmanzızı sağlar</i></span>
                                 </div>
                             </div>
                         </div>
@@ -56,118 +65,107 @@
 
                     <!-- Skills & Abilities -->
                     <div class="resume-box">
-                        <h4 class="title-bar title-bar-black title-bar-hover"><strong>Skills</strong> &amp; Abilities</h4>
+                        <h4 class="title-bar title-bar-black title-bar-hover"><strong>Yetenek </strong> &amp;
+                            Uzmanlıklarım</h4>
                         <div class="box-content">
-                            <!-- Skill Bar -->
-                            <div class="skill-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-black" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                                        <span class="percent">90%</span>
+
+
+                            <?php if ($yetenekler == null) {
+                                echo "<h4 class='alert-succes'>Hata</h4>";
+                            } else {
+                                foreach ($yetenekler as $row) {
+                                    $yetenek = $row->yetenekdegeri; ?>
+
+                                    <!-- Skill Bar -->
+                                    <div class="skill-bar">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-black" role="progressbar"
+                                                 aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:<?php echo $yetenek; ?>%;">
+                                                <span class="percent"><?php echo $yetenek; ?>%</span>
+                                            </div>
+                                        </div>
+                                        <h6 class="skill-title"><?php echo $row->yetenekadi; ?></h6>
                                     </div>
-                                </div>
-                                <h6 class="skill-title">Mental Coaching</h6>
-                            </div>
-                            <!-- Skill Bar -->
-                            <div class="skill-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-black" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                        <span class="percent">60%</span>
-                                    </div>
-                                </div>
-                                <h6 class="skill-title">Motivation Ability</h6>
-                            </div>
-                            <!-- Skill Bar -->
-                            <div class="skill-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-black" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-                                        <span class="percent">75%</span>
-                                    </div>
-                                </div>
-                                <h6 class="skill-title">Psychoanalisys</h6>
-                            </div>
-                            <!-- Skill Bar -->
-                            <div class="skill-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-black" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
-                                        <span class="percent">55%</span>
-                                    </div>
-                                </div>
-                                <h6 class="skill-title">Family support</h6>
-                            </div>
+
+                                <?php }
+                            } ?>
+
                         </div>
                     </div>
-
                     <!-- Educations & Jobs -->
                     <div class="resume-box">
-                        <h4 class="title-bar title-bar-black title-bar-hover"><strong>Education</strong> &amp; Jobs</h4>
+                        <h4 class="title-bar title-bar-black title-bar-hover"><strong>Eğitim</strong></h4>
                         <div class="box-content">
                             <div class="timeline">
-                                <!-- Single event -->
-                                <div class="timeline-event te-black">
-                                    <div class="event-date">06.2011 - 12.2012</div>
-                                    <h4 class="event-name"><strong>Managing</strong> Director</h4>
-                                    <div class="event-description ">Google Inc., USA</div>
-                                </div>
-                                <!-- Single event -->
-                                <div class="timeline-event te-black">
-                                    <div class="event-date">06.2011 - 12.2012</div>
-                                    <h4 class="event-name"><strong>Specialization</strong> Course</h4>
-                                    <div class="event-description ">AGH, Poland</div>
-                                </div>
+                                <?php if ($egitim == null) {
+                                    echo "<h4 class='alert-succes'>Hata</h4>";
+                                } else {
+                                    foreach ($egitim as $row) {
+                                         ?>
+
+                                        <!-- Single event -->
+                                        <div class="timeline-event te-black">
+                                            <div class="event-date"><?php echo $row->tarih; ?></div>
+                                            <h4 class="event-name"><strong><?php echo $row->okuladi; ?></strong></h4>
+                                            <div class="event-description "><?php echo $row->bolum; ?></div>
+                                        </div>
+                                    <?php }
+                                } ?>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
 
+
                 <div class="resume-col">
-
-                    <!-- Languages -->
-                    <div class="resume-box">
-                        <h4 class="title-bar title-bar-black title-bar-hover"><strong>Language</strong> Skills</h4>
-                        <div class="box-content text-center">
-                            <!-- Single Chart -->
-                            <div class="single-chart font-alt">
-                                <div class="chart chart-lg" data-bar-color="#111111" data-track-color="#e5e5e5" data-percent="75"><span class="percent"></span></div>
-                                <div class="chart-content text-uppercase">
-                                    <span class="chart-title">English</span>
-                                    <span class="chart-caption text-muted">Advanced level</span>
-                                </div>
-                            </div>
-                            <!-- Single Chart -->
-                            <div class="single-chart font-alt">
-                                <div class="chart chart-lg" data-bar-color="#111111" data-track-color="#e5e5e5" data-percent="25"><span class="percent"></span></div>
-                                <div class="chart-content text-uppercase">
-                                    <span class="chart-title">Spanish</span>
-                                    <span class="chart-caption text-muted">Basic level</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Hobibes -->
                     <div class="resume-box">
-                        <h4 class="title-bar title-bar-black title-bar-hover"><strong>Hobbies</strong> &amp; Interests</h4>
+                        <h4 class="title-bar title-bar-black title-bar-hover"><strong>Hobi </strong> &amp;
+                            İlgialanlarım</h4>
                         <div class="box-content">
                             <div class="row">
                                 <!-- Icon Box -->
                                 <div class="col-sm-4 icon-box text-center">
-                                    <span class="icon icon-circle icon-sm icon-black"><i class="flaticon-think4"></i></span>
-                                    <h6 class="font-alt margin-bottom-0">Psychology</h6>
+                                        <span class="icon icon-circle icon-sm icon-black"><i
+                                                    class="fa fa-globe"></i></span>
+                                    <h6 class="font-alt margin-bottom-0">İnternet</h6>
                                 </div>
                                 <!-- Icon Box -->
                                 <div class="col-sm-4 icon-box text-center">
-                                    <span class="icon icon-circle icon-sm icon-black"><i class="flaticon-location1"></i></span>
-                                    <h6 class="font-alt margin-bottom-0">Travelling</h6>
+                                        <span class="icon icon-circle icon-sm icon-black"><i
+                                                    class="fa fa-cogs"></i></span>
+                                    <h6 class="font-alt margin-bottom-0">Araştırma</h6>
                                 </div>
                                 <!-- Icon Box -->
                                 <div class="col-sm-4 icon-box text-center">
-                                    <span class="icon icon-circle icon-sm icon icon-black"><i class="flaticon-coffee-cup1"></i></span>
-                                    <h6 class="font-alt margin-bottom-0">Coffee</h6>
+                                        <span class="icon icon-circle icon-sm icon icon-black"><i
+                                                    class="fa fa-coffee"></i></span>
+                                    <h6 class="font-alt margin-bottom-0">Soda & Kahve</h6>
+                                </div>
+                                <!-- Icon Box -->
+                                <div class="col-sm-4 icon-box text-center">
+                                    <span class="icon icon-circle icon-sm icon icon-black"><i
+                                                class="fa fa-music"></i></span>
+                                    <h6 class="font-alt margin-bottom-0">Muzik</h6>
+                                </div>
+                                <!-- Icon Box -->
+                                <div class="col-sm-4 icon-box text-center">
+                                        <span class="icon icon-circle icon-sm icon icon-black"><i
+                                                    class="fa fa-laptop"></i></span>
+                                    <h6 class="font-alt margin-bottom-0">Bilgisayar</h6>
+                                </div>
+                                <!-- Icon Box -->
+                                <div class="col-sm-4 icon-box text-center">
+                                    <span class="icon icon-circle icon-sm icon icon-black"><i
+                                                class="fa fa-film"></i></span>
+                                    <h6 class="font-alt margin-bottom-0">Film</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
             </div>

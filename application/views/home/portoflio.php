@@ -6,91 +6,37 @@
             <!-- Portfolio Item -->
             <a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
                 <div class="item-photo">
-                    <img src="<?php base_url();?>assets/images/projects/project01.jpg" alt="">
+                    <img src="<?php base_url();?>assets/images/projects/1.jpg" alt="">
                 </div>
                 <div class="item-overlay">
-                    <span class="item-title">Business Courses</span>
+                    <span class="item-title">Deneme</span>
                 </div>
             </a>
             <!-- Portfolio Item -->
             <a href="projects/project01.html" class="portfolio-item item-wide" data-target="ajax-portfolio">
                 <div class="item-photo">
-                    <img src="<?php base_url();?>assets/images/projects/project02.jpg" alt="">
+                    <img src="<?php base_url();?>assets/images/projects/2.jpg" alt="">
                 </div>
                 <div class="item-overlay">
-                    <span class="item-title">Team Work Management</span>
+                    <span class="item-title">Randevu</span>
                 </div>
             </a>
             <!-- Portfolio Item -->
             <a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
                 <div class="item-photo">
-                    <img src="<?php base_url();?>assets/images/projects/project03.jpg" alt="">
+                    <img src="<?php base_url();?>assets/images/projects/3.jpg" alt="">
                 </div>
                 <div class="item-overlay">
-                    <span class="item-title">Mental Coaching</span>
+                    <span class="item-title">Sistem Kurulum</span>
                 </div>
             </a>
             <!-- Portfolio Item -->
             <a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
                 <div class="item-photo">
-                    <img src="<?php base_url();?>assets/images/projects/project04.jpg" alt="">
+                    <img src="<?php base_url();?>assets/images/projects/3.jpg" alt="">
                 </div>
                 <div class="item-overlay">
-                    <span class="item-title">Team work management</span>
-                </div>
-            </a>
-            <!-- Portfolio Item -->
-            <a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
-                <div class="item-photo">
-                    <img src="<?php base_url();?>assets/images/projects/project07.jpg" alt="">
-                </div>
-                <div class="item-overlay">
-                    <span class="item-title">Team work management</span>
-                </div>
-            </a>
-            <!-- Portfolio Item -->
-            <a href="projects/project01.html" class="portfolio-item item-wide" data-target="ajax-portfolio">
-                <div class="item-photo">
-                    <img src="<?php base_url();?>assets/images/projects/project06.jpg" alt="">
-                </div>
-                <div class="item-overlay">
-                    <span class="item-title">Team work management</span>
-                </div>
-            </a>
-            <!-- Portfolio Item -->
-            <a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
-                <div class="item-photo">
-                    <img src="<?php base_url();?>assets/images/projects/project05.jpg" alt="">
-                </div>
-                <div class="item-overlay">
-                    <span class="item-title">Team work management</span>
-                </div>
-            </a>
-            <!-- Portfolio Item -->
-            <a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
-                <div class="item-photo">
-                    <img src="<?php base_url();?>assets/images/projects/project08.jpg" alt="">
-                </div>
-                <div class="item-overlay">
-                    <span class="item-title">Team work management</span>
-                </div>
-            </a>
-            <!-- Portfolio Item -->
-            <a href="projects/project01.html" class="portfolio-item item-wide" data-target="ajax-portfolio">
-                <div class="item-photo">
-                    <img src="<?php base_url();?>assets/images/projects/project09.jpg" alt="">
-                </div>
-                <div class="item-overlay">
-                    <span class="item-title">Team work management</span>
-                </div>
-            </a>
-            <!-- Portfolio Item -->
-            <a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
-                <div class="item-photo">
-                    <img src="<?php base_url();?>assets/images/projects/project10.jpg" alt="">
-                </div>
-                <div class="item-overlay">
-                    <span class="item-title">Team work management</span>
+                    <span class="item-title">Test</span>
                 </div>
             </a>
         </div>

@@ -28,40 +28,41 @@
 
             <!-- Form -->
             <div class="contact-box">
-                <h4 class="title-bar title-bar-black"><strong>Write</strong> to me</h4>
+                <h4 class="title-bar title-bar-black"><strong>Bana</strong> yazın</h4>
                 <form id="contact-form" class=" clearfix">
                     <div class="row">
                         <div class="col-md-6 form-group">
-                            <input type="text" name="name" class="form-control" placeholder="Name and surname">
+                            <input type="text" name="name" class="form-control" placeholder="Ad Soyad">
                         </div>
                         <div class="col-md-6 form-group">
-                            <input type="email" name="email" class="form-control" placeholder="Email address">
+                            <input type="email" name="email" class="form-control" placeholder="Mail Adresiniz">
                         </div>
                         <div class="col-md-12 form-group">
-                            <input type="text" name="subject" class="form-control" placeholder="Subject">
+                            <input type="text" name="subject" class="form-control" placeholder="Konu">
                         </div>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" class="form-control" rows="4" placeholder="Your message"></textarea>
+                        <textarea name="message" class="form-control" rows="4" placeholder="Mesaj"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary pull-right">Send Message!</button>
+                    <button type="submit" class="btn btn-primary pull-right">Gönder</button>
                 </form>
             </div>
 
             <!-- Social Media -->
             <div class="contact-box">
-                <h4 class="title-bar title-bar-black"><strong>Social</strong> media</h4>
+                <h4 class="title-bar title-bar-black"><strong>Sosyal</strong> Media</h4>
                 <div class="social-icons margin-bottom-10">
-                    <a href="#" class="social-icon icon-facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                    <a href="#" class="social-icon icon-twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                    <a href="https://www.facebook.com/akatunahan" class="social-icon icon-facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                    <a href="https://twitter.com/tunahanaka" class="social-icon icon-twitter"><i class="fa fa-twitter fa-fw"></i></a>
                     <a href="#" class="social-icon icon-google-plus"><i class="fa fa-google-plus fa-fw"></i></a>
                 </div>
-                <div class="fb-like" data-href="https://www.facebook.com/suelopl" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-            </div>
+                <div class="fb-like" data-href="https://www.facebook.com/akatunahan" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+              </div>
 
         </div>
 
         <!-- Map -->
+        <div class="fb-page" data-href="https://www.facebook.com/akatunahan" data-tabs="timeline" data-width="500" data-height="900" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
 
 
     </div>
