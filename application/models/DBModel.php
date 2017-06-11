@@ -92,6 +92,39 @@ class DBModel extends CI_Model
             return FALSE;
         }
     }
+    // Projelerim
+    function Projelerim()
+    {
+        $this->db->select('*');
+        $this->db->from('projelerim');
+        $this->db->where('durum', 1);
+        // $this->db->order_by('yetenekdegeri',"desc");
+
+        $query = $this->db->get();
+
+        if ($query->num_rows() > 0) {
+            return $query->result();
+        } else {
+            return FALSE;
+        }
+    }
+
+    // BlogList
+    function Bloglist()
+    {
+        $this->db->select('*');
+        $this->db->from('blog');
+        $this->db->where('durum', 1);
+        // $this->db->order_by('yetenekdegeri',"desc");
+
+        $query = $this->db->get();
+
+        if ($query->num_rows() > 0) {
+            return $query->result();
+        } else {
+            return FALSE;
+        }
+    }
 
 
 }

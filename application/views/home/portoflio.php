@@ -3,42 +3,25 @@
     <div class="section-wrapper">
         <!-- Items List -->
         <div class="portfolio-list portfolio-dark">
-            <!-- Portfolio Item -->
-            <a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
-                <div class="item-photo">
-                    <img src="<?php base_url();?>assets/images/projects/1.jpg" alt="">
-                </div>
-                <div class="item-overlay">
-                    <span class="item-title">Deneme</span>
-                </div>
-            </a>
-            <!-- Portfolio Item -->
-            <a href="projects/project01.html" class="portfolio-item item-wide" data-target="ajax-portfolio">
-                <div class="item-photo">
-                    <img src="<?php base_url();?>assets/images/projects/2.jpg" alt="">
-                </div>
-                <div class="item-overlay">
-                    <span class="item-title">Randevu</span>
-                </div>
-            </a>
-            <!-- Portfolio Item -->
-            <a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
-                <div class="item-photo">
-                    <img src="<?php base_url();?>assets/images/projects/3.jpg" alt="">
-                </div>
-                <div class="item-overlay">
-                    <span class="item-title">Sistem Kurulum</span>
-                </div>
-            </a>
-            <!-- Portfolio Item -->
-            <a href="projects/project01.html" class="portfolio-item" data-target="ajax-portfolio">
-                <div class="item-photo">
-                    <img src="<?php base_url();?>assets/images/projects/3.jpg" alt="">
-                </div>
-                <div class="item-overlay">
-                    <span class="item-title">Test</span>
-                </div>
-            </a>
+            <?php if ($proje == null) {
+                echo "<h4 class='alert-succes'>Hata</h4>";
+            } else {
+                $a=0;
+                foreach ($proje as $row) { $a++?>
+                    <!-- Portfolio Item  item-wide -->
+                    <!-- $x = (($sayi % 2) == 0)  ? 'Tek' : 'Cift';  -->
+                    <a href="<?php echo site_url('home/proje') ?>" class="<?php echo (($a % 3) == 0)  ? 'portfolio-item item-wide' : 'portfolio-item'; ?>" data-target="ajax-portfolio">
+                        <div class="item-photo">
+                            <img src="<?php base_url(); ?>assets/images/projects/<?php echo $row->projeresim; ?>"
+                                 alt="">
+                        </div>
+                        <div class="item-overlay">
+                            <span class="item-title"><?php echo $row->projebaslik; ?></span>
+                        </div>
+                    </a>
+
+                <?php }
+            } ?>
         </div>
     </div>
     <!-- Item Details -->

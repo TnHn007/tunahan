@@ -18,17 +18,27 @@ class Home extends CI_Controller
     {
         $data['resim'] = $this->DBModel->profil_resim();
         $data['profil'] = $this->DBModel->adsoyad();
-        $data['hakkimda']=$this->DBModel->hakkimda();
-        $data['yetenekler']=$this->DBModel->yeteneklerim();
-        $data['egitim']=$this->DBModel->mezuniyet();
+        $data['hakkimda'] = $this->DBModel->hakkimda();
+        $data['yetenekler'] = $this->DBModel->yeteneklerim();
+        $data['egitim'] = $this->DBModel->mezuniyet();
+        $data['proje'] = $this->DBModel->Projelerim();
+        $data['blog'] = $this->DBModel->Bloglist();
 
         $this->load->view('home/sabit/header', $data);
         $this->load->view('home/home', $data); //Ana Menu
-        $this->load->view('home/section1',$data); //aNA mENU DEVAMI
-        $this->load->view('home/portoflio'); //Projelerim
-        $this->load->view('home/blog'); //Blog
+        $this->load->view('home/section1', $data); //aNA mENU DEVAMI
+        $this->load->view('home/portoflio', $data); //Projelerim
+        $this->load->view('home/blog',$data); //Blog
         $this->load->view('home/contact'); //İletişim
         $this->load->view('home/index');
         $this->load->view('home/sabit/footer');
+    }
+
+    /**
+     * @return projelerim
+     */
+    public function proje()
+    {
+        $this->load->view('home/project');
     }
 }

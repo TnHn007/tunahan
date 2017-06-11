@@ -35,7 +35,8 @@
                     foreach ($profil as $row){  ?>
                     <div class="my-avatar"><img src="<?php  echo base_url();?>assets/images/resim/<?php echo $row->avatar; ?>" class="img-circle" alt="" /></div>
                     <h2 class="margin-bottom-0"><strong><?php echo $row->profil_adi; ?></strong></h2>
-                    <?php          }   }    ?>
+                    <?php }
+                    } ?>
                     <h6 class="nav-caption">Deneyim<span class="text-primary">denenme</span> Manavgat</h6>
                 </div>
                 <div class="content-buttons">
